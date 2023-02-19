@@ -226,7 +226,7 @@ class GoogleAnalyticsStream(Stream):
                     if metric_type == "integer":
                         value = int(value)
                     elif metric_type == "number":
-                        value = float(value.value)
+                        value = float(value)
 
                     record[metric_name] = value
 
