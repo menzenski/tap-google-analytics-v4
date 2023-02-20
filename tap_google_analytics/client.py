@@ -223,10 +223,10 @@ class GoogleAnalyticsStream(Stream):
                     if hasattr(value, "value"):
                         value = value.value
 
-                    if metric_type == "integer":
-                        value = int(value)
-                    elif metric_type == "number":
-                        value = float(value)
+                    # if metric_type == "integer":
+                    #     value = int(value)
+                    # elif metric_type == "number":
+                    #     value = float(value)
 
                     record[metric_name] = value
 
